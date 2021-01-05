@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Chuck Norris Jokes</string>
+
+    <string name="categories_title">Categories</string>
+    <string name="my_favorite_jokes_title">My Favorite Jokes</string>
+    <string name="favorite_joke_added">Favorite joke added</string>
+    <string name="favorite_joke_removed">Favorite joke removed</string>
+    <string name="error_connection">Connection error, try again</string>
+    <string name="no_favorite_joke">No favorite joke, add a joke</string>
+
+    <string name="txt_edt_search_jokes">Type a word to search</string>
+    <string name="txt_toast_search_jokes">Type a word to complete the search</string>
+
+    <string name="txt_see_more_about"><u>SEE MORE ABOUT</u></string>
+    <string name="txt_click_to_like">Click to like</string>
+    <string name="txt_click_to_dislike">Click to dislike</string>
+    <string name="txt_search">Search</string>
+
+</resources>

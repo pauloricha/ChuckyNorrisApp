@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="Base.Theme.ChuckNorris" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorSecondary">@color/brown</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.ChuckNorris" parent="Base.Theme.ChuckNorris"/>
+
+    <style name="Theme.ChuckNorris.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ChuckNorris.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="CustomToolbarTheme" parent="Theme.ChuckNorris.NoActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

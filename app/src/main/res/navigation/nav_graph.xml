@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/view_pager_fragment">
+
+    <fragment
+        android:id="@+id/view_pager_fragment"
+        android:name="br.com.example.guiabolsoapptest.view.home.HomeViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+
+        <action
+            android:id="@+id/action_view_pager_fragment_to_joke_details_fragment"
+            app:destination="@id/joke_details_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_view_pager_fragment_to_jokes_fragment"
+            app:destination="@id/jokes_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/joke_details_fragment"
+        android:name="br.com.example.guiabolsoapptest.view.jokedetails.JokeDetailsFragment"
+        android:label="jokes_fragment"
+        tools:layout="@layout/fragment_joke_details" />
+
+    <fragment
+        android:id="@+id/jokes_fragment"
+        android:name="br.com.example.guiabolsoapptest.view.jokes.JokesFragment"
+        android:label="jokes_fragment"
+        tools:layout="@layout/fragment_jokes">
+
+        <action
+            android:id="@+id/action_view_pager_fragment_to_joke_details_fragment"
+            app:destination="@id/joke_details_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>
